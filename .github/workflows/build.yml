@@ -50,10 +50,25 @@ jobs:
             ${{ github.workspace }}/public/*/*.ical
           if-no-files-found: error
 
+  cleanup:
+    name: Calendars / Delete deployment
+    runs-on: ubuntu-latest
+    permissions: write-all
+    needs:
+      - build
+
+    steps:
+      - name: Delete deployment
+        uses: strumwolf/delete-deployment-environment@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment: github-pages
+          onlyRemoveDeployments: true
+
   deploy:
     name: Calendars / Deploy
     needs:
-      - build
+      - cleanup
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
