@@ -1,0 +1,25 @@
+{
+  "name": "blackout-schedule-ical",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@touch4it/ical-timezones": "^1.9.0",
+    "ical-generator": "^3.6.1",
+    "luxon": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.2.0",
+    "@types/node": "^18.11.18",
+    "dayjs": "^1.11.7",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.40",
+    "rrule": "^2.7.1"
+  }
+}
