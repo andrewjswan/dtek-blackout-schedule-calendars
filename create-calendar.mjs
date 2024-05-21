@@ -30,21 +30,21 @@ export default function createCalendar(raw, name)
 
       for (let i = 0; i < hours.length;)
       {
-        const hour = hours[i]
-        const start = day.plus({hours: Number(hour) - 1})
         const status = dayScedule[hour]
-        
         if (status == "yes")
         {
+          i++;
           continue;
         }
 
+        const hour = hours[i]
+        const start = day.plus({hours: Number(hour) - 1})
         while (dayScedule[hours[i]] === status)
         {
           i++
         }
-
         const end = day.plus({hours: Number(hours[i] ? hours[i] : 25) - 1})
+
         cal.createEvent({
           start,
           end,
