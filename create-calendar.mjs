@@ -30,6 +30,8 @@ export default function createCalendar(raw, name)
 
       for (let i = 0; i < hours.length;)
       {
+        const hour = hours[i]
+
         const status = dayScedule[hour]
         if (status == "yes")
         {
@@ -37,7 +39,6 @@ export default function createCalendar(raw, name)
           continue;
         }
 
-        const hour = hours[i]
         const start = day.plus({hours: Number(hour) - 1})
         while (dayScedule[hours[i]] === status)
         {
