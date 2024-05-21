@@ -9,9 +9,9 @@ export default function createCalendar(raw, name)
   const startOfWeek = now.startOf("week")
   const groups = {};
   const states = {
-    "maybe": "Можливо відключення", 
-    "no": "Планове відключення", 
-    "yes": "Світло є"
+    "maybe": "РњРѕР¶Р»РёРІРѕ РІС–РґРєР»СЋС‡РµРЅРЅСЏ", 
+    "no": "РџР»Р°РЅРѕРІРµ РІС–РґРєР»СЋС‡РµРЅРЅСЏ", 
+    "yes": "РЎРІС–С‚Р»Рѕ С”"
   };
 
   for (const [group, groupSchedule] of Object.entries(raw.data))
