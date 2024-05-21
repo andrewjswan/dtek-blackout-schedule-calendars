@@ -70,6 +70,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: iCal Calendars
+          path: ${{ github.workspace }}/public/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
