@@ -36,7 +36,7 @@ export default function createCalendar(raw, name)
         
         if (status == "yes")
         {
-          break;
+          continue;
         }
 
         while (dayScedule[hours[i]] === status)
