@@ -65,7 +65,7 @@ jobs:
       - name: Generate Calendars Listings
         uses: jayanta525/github-pages-directory-listing@v4.0.0
         with:
-          FOLDER: ${{ github.workspace }}/public/
+          FOLDER: ${{ github.workspace }}/public
 
       - name: Upload Artifacts / Calendars Listings
         uses: actions/upload-artifact@v4
