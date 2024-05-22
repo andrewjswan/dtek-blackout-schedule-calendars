@@ -15,9 +15,6 @@ jobs:
     name: Calendars / Delete deployment
     runs-on: ubuntu-latest
     permissions: write-all
-    needs:
-      - build
-
     steps:
       - name: Delete deployment
         uses: strumwolf/delete-deployment-environment@v2
