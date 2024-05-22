@@ -130,6 +130,13 @@ jobs:
         with:
             name: iCal Calendars Listings
             failOnError: false
+
+      - name: Delete Artifacts / Github Pages
+        uses: geekyeggo/delete-artifact@v5
+        with:
+            name: github-pages
+            failOnError: false
+
   release:
     name: Calendars / Release
     runs-on: ubuntu-latest
