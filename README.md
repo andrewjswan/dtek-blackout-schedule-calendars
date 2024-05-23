@@ -5,12 +5,14 @@
 [![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/andrewjswan/dtek-blackout-schedule-calendars?include_prereleases)](https://github.com/andrewjswan/dtek-blackout-schedule-calendars/releases)
 [![StandWithUkraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
 
-# Calendars
+<br />
 
-List of calendars https://andrewjswan.github.io/dtek-blackout-schedule-calendars/
+> [!TIP]
+> List of calendars https://andrewjswan.github.io/dtek-blackout-schedule-calendars/
 
-## Notes
+<br />
 
-Based on http://gitlab.com/m03geek/dtek-blackout-schedule/
-
-Json from https://www.dtek-kem.com.ua/ua/shutdowns page (`DisconSchedule.preset=`)
+> [!NOTE]
+> Based on http://gitlab.com/m03geek/dtek-blackout-schedule/
+> 
+> Json from https://www.dtek-kem.com.ua/ua/shutdowns page (`DisconSchedule.preset=`)
