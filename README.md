@@ -20,5 +20,3 @@ In other applications, look for the ability to import a calendar from a URL or .
 
 > [!NOTE]
 > Based on http://gitlab.com/m03geek/dtek-blackout-schedule/
-> 
-> Json from https://www.dtek-kem.com.ua/ua/shutdowns page (`DisconSchedule.preset=`)
