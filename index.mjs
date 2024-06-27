@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import createCalendar from './create-calendar.mjs'
 
-const regionsDir = fs.readdirSync('./data')
+const regionsDir = fs.readdirSync('./data').filter(file => path.extname(file) === '.json');
 
 for (const regionFile of regionsDir) {
   const regionName = path.basename(regionFile, '.json')
