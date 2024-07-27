@@ -1,46 +1,58 @@
-lockfileVersion: 5.3
+lockfileVersion: '9.0'
 
-specifiers:
-  '@touch4it/ical-timezones': ^1.9.0
-  '@types/luxon': ^3.2.0
-  '@types/node': ^18.11.18
-  dayjs: ^1.11.7
-  ical-generator: ^3.6.1
-  luxon: ^3.2.1
-  moment: ^2.29.4
-  moment-timezone: ^0.5.40
-  rrule: ^2.7.1
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
-dependencies:
-  '@touch4it/ical-timezones': 1.9.0
-  ical-generator: 3.6.1_d53fd1bb7fcf5bfc02deedb785c987fd
-  luxon: 3.2.1
+importers:
 
-devDependencies:
-  '@types/luxon': 3.2.0
-  '@types/node': 18.11.18
-  dayjs: 1.11.7
-  moment: 2.29.4
-  moment-timezone: 0.5.40
-  rrule: 2.7.1
+  .:
+    dependencies:
+      '@touch4it/ical-timezones':
+        specifier: ^1.9.0
+        version: 1.9.0
+      ical-generator:
+        specifier: ^3.6.1
+        version: 3.6.1(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.4.2)(@types/node@18.19.42)(dayjs@1.11.12)(luxon@3.4.4)(moment-timezone@0.5.45)(moment@2.30.1)(rrule@2.8.1)
+      luxon:
+        specifier: ^3.2.1
+        version: 3.4.4
+    devDependencies:
+      '@types/luxon':
+        specifier: ^3.2.0
+        version: 3.4.2
+      '@types/node':
+        specifier: ^18.11.18
+        version: 18.19.42
+      dayjs:
+        specifier: ^1.11.7
+        version: 1.11.12
+      moment:
+        specifier: ^2.29.4
+        version: 2.30.1
+      moment-timezone:
+        specifier: ^0.5.40
+        version: 0.5.45
+      rrule:
+        specifier: ^2.7.1
+        version: 2.8.1
 
 packages:
 
-  /@touch4it/ical-timezones/1.9.0:
+  '@touch4it/ical-timezones@1.9.0':
     resolution: {integrity: sha512-UAiZMrFlgMdOIaJDPsKu5S7OecyMLr3GGALJTYkRgHmsHAA/8Ixm1qD09ELP2X7U1lqgrctEgvKj9GzMbczC+g==}
     engines: {node: '>= 14.0.0'}
-    dev: false
 
-  /@types/luxon/3.2.0:
-    resolution: {integrity: sha512-lGmaGFoaXHuOLXFvuju2bfvZRqxAqkHPx9Y9IQdQABrinJJshJwfNCKV+u7rR3kJbiqfTF/NhOkcxxAFrObyaA==}
+  '@types/luxon@3.4.2':
+    resolution: {integrity: sha512-TifLZlFudklWlMBfhubvgqTXRzLDI5pCbGa4P8a3wPyUQSW+1xQ5eDsreP9DWHX3tjq1ke96uYG/nwundroWcA==}
 
-  /@types/node/18.11.18:
-    resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
+  '@types/node@18.19.42':
+    resolution: {integrity: sha512-d2ZFc/3lnK2YCYhos8iaNIYu9Vfhr92nHiyJHRltXWjXUBjEE+A4I58Tdbnw4VhggSW+2j5y5gTrLs4biNnubg==}
 
-  /dayjs/1.11.7:
-    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
+  dayjs@1.11.12:
+    resolution: {integrity: sha512-Rt2g+nTbLlDWZTwwrIXjy9MeiZmSDI375FvZs72ngxx8PDC6YXOeR3q5LAuPzjZQxhiWdRKac7RKV+YyQYfYIg==}
 
-  /ical-generator/3.6.1_d53fd1bb7fcf5bfc02deedb785c987fd:
+  ical-generator@3.6.1:
     resolution: {integrity: sha512-tEH0OTNn00Mp61DcTxIFR+5fhsAivKk1LWAJUAbkMCI+M4yu+cZzT5X8rZf3b5PzFkMogh0zj3PsFh9bHvGGIQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -72,39 +84,68 @@ packages:
         optional: true
       rrule:
         optional: true
-    dependencies:
-      '@touch4it/ical-timezones': 1.9.0
-      '@types/luxon': 3.2.0
-      '@types/node': 18.11.18
-      dayjs: 1.11.7
-      luxon: 3.2.1
-      moment: 2.29.4
-      moment-timezone: 0.5.40
-      rrule: 2.7.1
-      uuid-random: 1.3.2
-    dev: false
 
-  /luxon/3.2.1:
-    resolution: {integrity: sha512-QrwPArQCNLAKGO/C+ZIilgIuDnEnKx5QYODdDtbFaxzsbZcc/a7WFq7MhsVYgRlwawLtvOUESTlfJ+hc/USqPg==}
+  luxon@3.4.4:
+    resolution: {integrity: sha512-zobTr7akeGHnv7eBOXcRgMeCP6+uyYsczwmeRCauvpvaAltgNyTbLH/+VaEAPUeWBT+1GuNmz4wC/6jtQzbbVA==}
     engines: {node: '>=12'}
-    dev: false
 
-  /moment-timezone/0.5.40:
-    resolution: {integrity: sha512-tWfmNkRYmBkPJz5mr9GVDn9vRlVZOTe6yqY92rFxiOdWXbjaR0+9LwQnZGGuNR63X456NqmEkbskte8tWL5ePg==}
-    dependencies:
-      moment: 2.29.4
+  moment-timezone@0.5.45:
+    resolution: {integrity: sha512-HIWmqA86KcmCAhnMAN0wuDOARV/525R2+lOLotuGFzn4HO+FH+/645z2wx0Dt3iDv6/p61SIvKnDstISainhLQ==}
 
-  /moment/2.29.4:
-    resolution: {integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==}
+  moment@2.30.1:
+    resolution: {integrity: sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==}
 
-  /rrule/2.7.1:
-    resolution: {integrity: sha512-4p20u/1U7WqR3Nb1hOUrm0u1nSI7sO93ZUVZEZ5HeF6Gr5OlJuyhwEGRvUHq8ZfrPsq5gfa5b9dqnUs/kPqpIw==}
-    dependencies:
-      tslib: 2.4.1
+  rrule@2.8.1:
+    resolution: {integrity: sha512-hM3dHSBMeaJ0Ktp7W38BJZ7O1zOgaFEsn41PDk+yHoEtfLV+PoJt9E9xAlZiWgf/iqEqionN0ebHFZIDAp+iGw==}
 
-  /tslib/2.4.1:
-    resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
+  tslib@2.6.3:
+    resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
 
-  /uuid-random/1.3.2:
+  undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+
+  uuid-random@1.3.2:
     resolution: {integrity: sha512-UOzej0Le/UgkbWEO8flm+0y+G+ljUon1QWTEZOq1rnMAsxo2+SckbiZdKzAHHlVh6gJqI1TjC/xwgR50MuCrBQ==}
-    dev: false
+
+snapshots:
+
+  '@touch4it/ical-timezones@1.9.0': {}
+
+  '@types/luxon@3.4.2': {}
+
+  '@types/node@18.19.42':
+    dependencies:
+      undici-types: 5.26.5
+
+  dayjs@1.11.12: {}
+
+  ical-generator@3.6.1(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.4.2)(@types/node@18.19.42)(dayjs@1.11.12)(luxon@3.4.4)(moment-timezone@0.5.45)(moment@2.30.1)(rrule@2.8.1):
+    dependencies:
+      uuid-random: 1.3.2
+    optionalDependencies:
+      '@touch4it/ical-timezones': 1.9.0
+      '@types/luxon': 3.4.2
+      '@types/node': 18.19.42
+      dayjs: 1.11.12
+      luxon: 3.4.4
+      moment: 2.30.1
+      moment-timezone: 0.5.45
+      rrule: 2.8.1
+
+  luxon@3.4.4: {}
+
+  moment-timezone@0.5.45:
+    dependencies:
+      moment: 2.30.1
+
+  moment@2.30.1: {}
+
+  rrule@2.8.1:
+    dependencies:
+      tslib: 2.6.3
+
+  tslib@2.6.3: {}
+
+  undici-types@5.26.5: {}
+
+  uuid-random@1.3.2: {}

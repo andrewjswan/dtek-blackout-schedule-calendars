@@ -1,6 +1,6 @@
 {
   "name": "blackout-schedule-ical",
-  "version": "2024.5.22",
+  "version": "2024.7.5",
   "description": "DTEK Blackout Schedule Calendars",
   "main": "index.js",
   "scripts": {
