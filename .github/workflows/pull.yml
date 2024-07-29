@@ -1,0 +1,33 @@
+name: Test / DTEK Blackout Schedule Calendars
+
+on:
+  pull_request:
+    types: [opened, edited]
+
+jobs:
+  build:
+    name: Calendars / Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v4
+
+      - name: Node setup
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: NPM Init
+        run: npm i
+        
+      - name: Building
+        run: node index.mjs
+
+      - name: Upload Artifacts / Calendars
+        uses: actions/upload-artifact@v4
+        with:
+          name: iCal Calendars
+          path: |
+            ${{ github.workspace }}/public/*/*.ical
+          if-no-files-found: error
