@@ -26,7 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "@touch4it/ical-timezones": "^1.9.0",
-    "ical-generator": "^3.6.1",
+    "ical-generator": "^7.1.0",
     "luxon": "^3.2.1"
   },
   "devDependencies": {
