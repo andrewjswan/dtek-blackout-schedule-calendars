@@ -15,6 +15,6 @@ for (const regionFile of regionsDir) {
     // ignore
   }
   for (const [group, cal] of Object.entries(calendars)) {
-    cal.saveSync(`./public/${regionName}/${group}.ical`);
+    fs.writeFileSync(`./public/${regionName}/${group}.ical`, cal.toString());
   }
 }
