@@ -27,7 +27,7 @@
   "dependencies": {
     "@touch4it/ical-timezones": "^1.9.0",
     "ical-generator": "^7.2.0",
-    "luxon": "^3.2.1"
+    "luxon": "^3.5.0"
   },
   "devDependencies": {
     "@types/luxon": "^3.2.0",
