@@ -13,6 +13,13 @@ In other applications, look for the ability to import a calendar from a URL or .
 
 <br />
 
+> [!WARNING]
+> Added **Daily calendars** for regions, calendar link format changed.
+> - **Daily** - Calendars for the current day and, if any, for the next day
+> - **Manual** - Calendars that were before the introduction of daily.
+
+<br />
+
 > [!TIP]
 > List of calendars https://andrewjswan.github.io/dtek-blackout-schedule-calendars/
 

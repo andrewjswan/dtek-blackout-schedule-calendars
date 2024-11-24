@@ -22,7 +22,7 @@ jobs:
         run: npm i
         
       - name: Building
-        run: node index.mjs
+        run: node make-manual.mjs
 
       - name: Upload Artifacts / Calendars
         uses: actions/upload-artifact@v4

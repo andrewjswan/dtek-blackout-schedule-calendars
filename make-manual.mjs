@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import createCalendar from './create-calendar.mjs'
+import createCalendar from './create-manual-calendar.mjs'
 
 const regionsDir = fs.readdirSync('./data').filter(file => path.extname(file) === '.json');
 
@@ -10,11 +10,11 @@ for (const regionFile of regionsDir) {
   
   const calendars = createCalendar(raw.default, regionName)
   try {
-    fs.mkdirSync(`./public/${regionName}`, {recursive: true})
+    fs.mkdirSync(`./public/manual/${regionName}`, {recursive: true})
   } catch (err) {
     // ignore
   }
   for (const [group, cal] of Object.entries(calendars)) {
-    fs.writeFileSync(`./public/${regionName}/${group}.ical`, cal.toString());
+    fs.writeFileSync(`./public/manual/${regionName}/${group}.ical`, cal.toString());
   }
 }

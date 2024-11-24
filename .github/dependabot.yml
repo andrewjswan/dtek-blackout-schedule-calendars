@@ -1,23 +1,46 @@
 version: 2
 updates:
-    - package-ecosystem: "npm"
-      directory: "/"
-      schedule:
-          interval: weekly
-          day: monday
-          time: "12:00"
-      ignore:
-          - dependency-name: "@types/node"
-      commit-message:
-          prefix: ""
-          prefix-development: "[NPM]"
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "12:00"
+    labels:
+      - dependencies
+      - github-actions
+    commit-message:
+      prefix: "[DEP]"
+    open-pull-requests-limit: 10
 
-    - package-ecosystem: "github-actions"
-      directory: "/"
-      schedule:
-      schedule:
-          interval: weekly
-          day: monday
-          time: "12:00"
-      commit-message:
-          prefix: "[DEP]"
+  # Update Node dependencies
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "12:00"
+    labels:
+      - dependencies
+      - node
+    ignore:
+      - dependency-name: "@types/node"
+    commit-message:
+      prefix: "[NPM]"
+    open-pull-requests-limit: 10
+
+  # Update Python dependencies
+  - package-ecosystem: "pip"
+    directories:
+      - "*"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "12:00"
+    labels:
+      - dependencies
+      - python
+    commit-message:
+      prefix: "[PIP]"
+    open-pull-requests-limit: 10
