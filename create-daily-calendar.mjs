@@ -27,18 +27,29 @@ export default function createCalendar(raw, name)
           name: `blackouts.${name}.${schedgroup}`,
           generator: getVtimezoneComponent
         });
-        for (const [step, time] of Object.entries(scedule))
+
+        const hours = Object.values(scedule)
+        for (let i = 0; i < hours.length;)
         {
-          const time_start = time["start"];
-          const time_end = time["end"];
-          const time_type = time["type"];
-          const start = day.plus({hours: Number(time_start) - 1})
-          const end = day.plus({hours: Number(time_end) - 1})
+          const status = hours[i].type
+          if (status == "NO_OUTAGE")
+          {
+            i++;
+            continue;
+          }
+
+          const start = day.plus({hours: Number(hours[i].start)})
+          do
+          {
+            var mid = hours[i].end
+            i++
+          } while (i < hours.length && hours[i].type === status && hours[i].start === mid)
+          const end = day.plus({hours: Number(hours[i - 1].end)})
           cal.createEvent({
             start,
             end,
             timezone: TIMEZONE,
-            summary: states[time_type],
+            summary: states[status],
           });
         }
         groups[schedgroup] = cal
