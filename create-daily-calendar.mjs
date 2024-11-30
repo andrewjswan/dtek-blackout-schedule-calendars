@@ -5,8 +5,6 @@ import { DateTime } from "luxon";
 const TIMEZONE = "Europe/Kiev"
 export default function createCalendar(raw, name) 
 {
-  const now = DateTime.local({zone: TIMEZONE })
-  const startOfWeek = now.startOf("week")
   const groups = {};
   const states = {
     "POSSIBLE_OUTAGE": "Можливо відключення", 
@@ -19,7 +17,7 @@ export default function createCalendar(raw, name)
     if (group.hasOwnProperty("groups"))
     {
       var pattern = /(.+?)(\d{2})\.(\d{2})\.(\d{4})(.+)?/;
-      var day = DateTime.fromISO(group["title"].replace(pattern,'$4-$3-$2'));
+      var day = DateTime.fromISO(group["title"].replace(pattern,'$4-$3-$2'), {zone: TIMEZONE});
       for (const [schedgroup, scedule] of Object.entries(group["groups"]))
       {
         const cal = new ICalCalendar();
@@ -44,7 +42,7 @@ export default function createCalendar(raw, name)
             var mid = hours[i].end
             i++
           } while (i < hours.length && hours[i].type === status && hours[i].start === mid)
-          const end = day.plus({hours: Number(hours[i - 1].end)})
+          const end = day.plus({hours: Number(hours[i-1].end)})
           cal.createEvent({
             start,
             end,
