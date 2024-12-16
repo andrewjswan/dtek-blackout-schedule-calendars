@@ -11,7 +11,9 @@ export default function createCalendar(raw, name)
   const states = {
     "maybe": "Можливо відключення", 
     "no": "Планове відключення", 
-    "yes": "Світло є"
+    "yes": "Світло є",
+    "first": "Можливо відключення в перші 30 хв",
+    "second": "Можливо відключення в другі 30 хв"
   };
 
   for (const [group, groupSchedule] of Object.entries(raw.data))
