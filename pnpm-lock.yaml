@@ -12,8 +12,8 @@ importers:
         specifier: ^1.9.0
         version: 1.9.0
       ical-generator:
-        specifier: ^8.0.1
-        version: 8.0.1(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.4.2)(@types/node@18.19.42)(dayjs@1.11.13)(luxon@3.5.0)(moment-timezone@0.5.46)(moment@2.30.1)(rrule@2.8.1)
+        specifier: ^8.1.0
+        version: 8.1.0(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.4.2)(@types/node@18.19.42)(dayjs@1.11.13)(luxon@3.5.0)(moment-timezone@0.5.46)(moment@2.30.1)(rrule@2.8.1)
       luxon:
         specifier: ^3.5.0
         version: 3.5.0
@@ -52,8 +52,8 @@ packages:
   dayjs@1.11.13:
     resolution: {integrity: sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg==}
 
-  ical-generator@8.0.1:
-    resolution: {integrity: sha512-D7D0HPdjg8dEVTyN3QM95sioJj5/6TPj9wetrpt16tzszVgTIXHSSlreTsLuSSQpF61EdVxxTwYS9TVWr7vF0g==}
+  ical-generator@8.1.0:
+    resolution: {integrity: sha512-mHAIW4yCfpGR5fC2gpkkUuPpOITjVJb+zMaWXEFlmZeDxWU9QLaOJiwh+73IHEMcX4v3WtvVyX0HffVYU10Ydg==}
     engines: {node: 18 || 20 || >=22.0.0}
     peerDependencies:
       '@touch4it/ical-timezones': '>=1.6.0'
@@ -104,9 +104,6 @@ packages:
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
-  uuid-random@1.3.2:
-    resolution: {integrity: sha512-UOzej0Le/UgkbWEO8flm+0y+G+ljUon1QWTEZOq1rnMAsxo2+SckbiZdKzAHHlVh6gJqI1TjC/xwgR50MuCrBQ==}
-
 snapshots:
 
   '@touch4it/ical-timezones@1.9.0': {}
@@ -119,9 +116,7 @@ snapshots:
 
   dayjs@1.11.13: {}
 
-  ical-generator@8.0.1(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.4.2)(@types/node@18.19.42)(dayjs@1.11.13)(luxon@3.5.0)(moment-timezone@0.5.46)(moment@2.30.1)(rrule@2.8.1):
-    dependencies:
-      uuid-random: 1.3.2
+  ical-generator@8.1.0(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.4.2)(@types/node@18.19.42)(dayjs@1.11.13)(luxon@3.5.0)(moment-timezone@0.5.46)(moment@2.30.1)(rrule@2.8.1):
     optionalDependencies:
       '@touch4it/ical-timezones': 1.9.0
       '@types/luxon': 3.4.2
@@ -147,5 +142,3 @@ snapshots:
   tslib@2.6.3: {}
 
   undici-types@5.26.5: {}
-
-  uuid-random@1.3.2: {}
