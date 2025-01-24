@@ -27,7 +27,7 @@ jobs:
       - name: Upload Artifacts / Calendars
         uses: actions/upload-artifact@v4
         with:
-          name: iCal Calendars
+          name: iCal Calendars (Manual)
           path: |
             ${{ github.workspace }}/public/*/*.ical
           if-no-files-found: error
