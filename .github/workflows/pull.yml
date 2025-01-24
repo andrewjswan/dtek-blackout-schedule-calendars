@@ -18,16 +18,31 @@ jobs:
         with:
           node-version: 18
 
+      - name: Python setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install requirements
+        run: python3 -m pip install -r .github/requirements.txt
+
       - name: NPM Init
         run: npm i
         
-      - name: Building
+      - name: Building Manual
         run: node make-manual.mjs
+
+      - name: Update JSON
+        run: python3 update.py
+        working-directory: update
+
+      - name: Building Daily
+        run: node make-daily.mjs
 
       - name: Upload Artifacts / Calendars
         uses: actions/upload-artifact@v4
         with:
-          name: iCal Calendars (Manual)
+          name: iCal Calendars
           path: |
-            ${{ github.workspace }}/public/*/*.ical
+            ${{ github.workspace }}/public/*/*/*.ical
           if-no-files-found: error
