@@ -13,7 +13,7 @@ importers:
         version: 1.9.0
       ical-generator:
         specifier: ^8.1.1
-        version: 8.1.1(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.4.2)(@types/node@18.19.42)(dayjs@1.11.13)(luxon@3.5.0)(moment-timezone@0.5.46)(moment@2.30.1)(rrule@2.8.1)
+        version: 8.1.1(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.4.2)(@types/node@18.19.42)(dayjs@1.11.13)(luxon@3.5.0)(moment-timezone@0.5.47)(moment@2.30.1)(rrule@2.8.1)
       luxon:
         specifier: ^3.5.0
         version: 3.5.0
@@ -31,8 +31,8 @@ importers:
         specifier: ^2.29.4
         version: 2.30.1
       moment-timezone:
-        specifier: ^0.5.46
-        version: 0.5.46
+        specifier: ^0.5.47
+        version: 0.5.47
       rrule:
         specifier: ^2.7.1
         version: 2.8.1
@@ -89,8 +89,8 @@ packages:
     resolution: {integrity: sha512-rh+Zjr6DNfUYR3bPwJEnuwDdqMbxZW7LOQfUN4B54+Cl+0o5zaU9RJ6bcidfDtC1cWCZXQ+nvX8bf6bAji37QQ==}
     engines: {node: '>=12'}
 
-  moment-timezone@0.5.46:
-    resolution: {integrity: sha512-ZXm9b36esbe7OmdABqIWJuBBiLLwAjrN7CE+7sYdCCx82Nabt1wHDj8TVseS59QIlfFPbOoiBPm6ca9BioG4hw==}
+  moment-timezone@0.5.47:
+    resolution: {integrity: sha512-UbNt/JAWS0m/NJOebR0QMRHBk0hu03r5dx9GK8Cs0AS3I81yDcOc9k+DytPItgVvBP7J6Mf6U2n3BPAacAV9oA==}
 
   moment@2.30.1:
     resolution: {integrity: sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==}
@@ -119,7 +119,7 @@ snapshots:
 
   dayjs@1.11.13: {}
 
-  ical-generator@8.1.1(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.4.2)(@types/node@18.19.42)(dayjs@1.11.13)(luxon@3.5.0)(moment-timezone@0.5.46)(moment@2.30.1)(rrule@2.8.1):
+  ical-generator@8.1.1(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.4.2)(@types/node@18.19.42)(dayjs@1.11.13)(luxon@3.5.0)(moment-timezone@0.5.47)(moment@2.30.1)(rrule@2.8.1):
     dependencies:
       uuid-random: 1.3.2
     optionalDependencies:
@@ -129,12 +129,12 @@ snapshots:
       dayjs: 1.11.13
       luxon: 3.5.0
       moment: 2.30.1
-      moment-timezone: 0.5.46
+      moment-timezone: 0.5.47
       rrule: 2.8.1
 
   luxon@3.5.0: {}
 
-  moment-timezone@0.5.46:
+  moment-timezone@0.5.47:
     dependencies:
       moment: 2.30.1
 
