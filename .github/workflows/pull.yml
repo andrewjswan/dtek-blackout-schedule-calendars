@@ -16,7 +16,7 @@ jobs:
       - name: Node setup
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 19
 
       - name: Python setup
         uses: actions/setup-python@v5
