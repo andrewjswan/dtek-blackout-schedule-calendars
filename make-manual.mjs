@@ -6,7 +6,7 @@ const regionsDir = fs.readdirSync('./data').filter(file => path.extname(file) ==
 
 for (const regionFile of regionsDir) {
   const regionName = path.basename(regionFile, '.json')
-  const raw = await import(`./data/${regionFile}`, {assert: {type: "json"}})
+  const raw = await import(`./data/${regionFile}`, {with: {type: "json"}})
   
   const calendars = createCalendar(raw.default, regionName)
   try {
