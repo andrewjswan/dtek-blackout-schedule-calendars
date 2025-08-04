@@ -13,14 +13,14 @@ importers:
         version: 1.9.0
       ical-generator:
         specifier: ^9.0.0
-        version: 9.0.0(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.6.2)(@types/node@18.19.42)(dayjs@1.11.13)(luxon@3.7.1)(moment-timezone@0.6.0)(moment@2.30.1)(rrule@2.8.1)
+        version: 9.0.0(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.7.1)(@types/node@18.19.42)(dayjs@1.11.13)(luxon@3.7.1)(moment-timezone@0.6.0)(moment@2.30.1)(rrule@2.8.1)
       luxon:
         specifier: ^3.7.1
         version: 3.7.1
     devDependencies:
       '@types/luxon':
-        specifier: ^3.6.2
-        version: 3.6.2
+        specifier: ^3.7.1
+        version: 3.7.1
       '@types/node':
         specifier: ^18.11.18
         version: 18.19.42
@@ -43,8 +43,8 @@ packages:
     resolution: {integrity: sha512-UAiZMrFlgMdOIaJDPsKu5S7OecyMLr3GGALJTYkRgHmsHAA/8Ixm1qD09ELP2X7U1lqgrctEgvKj9GzMbczC+g==}
     engines: {node: '>= 14.0.0'}
 
-  '@types/luxon@3.6.2':
-    resolution: {integrity: sha512-R/BdP7OxEMc44l2Ex5lSXHoIXTB2JLNa3y2QISIbr58U/YcsffyQrYW//hZSdrfxrjRZj3GcUoxMPGdO8gSYuw==}
+  '@types/luxon@3.7.1':
+    resolution: {integrity: sha512-H3iskjFIAn5SlJU7OuxUmTEpebK6TKB8rxZShDslBMZJ5u9S//KM1sbdAisiSrqwLQncVjnpi2OK2J51h+4lsg==}
 
   '@types/node@18.19.42':
     resolution: {integrity: sha512-d2ZFc/3lnK2YCYhos8iaNIYu9Vfhr92nHiyJHRltXWjXUBjEE+A4I58Tdbnw4VhggSW+2j5y5gTrLs4biNnubg==}
@@ -108,7 +108,7 @@ snapshots:
 
   '@touch4it/ical-timezones@1.9.0': {}
 
-  '@types/luxon@3.6.2': {}
+  '@types/luxon@3.7.1': {}
 
   '@types/node@18.19.42':
     dependencies:
@@ -116,10 +116,10 @@ snapshots:
 
   dayjs@1.11.13: {}
 
-  ical-generator@9.0.0(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.6.2)(@types/node@18.19.42)(dayjs@1.11.13)(luxon@3.7.1)(moment-timezone@0.6.0)(moment@2.30.1)(rrule@2.8.1):
+  ical-generator@9.0.0(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.7.1)(@types/node@18.19.42)(dayjs@1.11.13)(luxon@3.7.1)(moment-timezone@0.6.0)(moment@2.30.1)(rrule@2.8.1):
     optionalDependencies:
       '@touch4it/ical-timezones': 1.9.0
-      '@types/luxon': 3.6.2
+      '@types/luxon': 3.7.1
       '@types/node': 18.19.42
       dayjs: 1.11.13
       luxon: 3.7.1
