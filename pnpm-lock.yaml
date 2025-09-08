@@ -13,10 +13,10 @@ importers:
         version: 1.9.0
       ical-generator:
         specifier: ^9.0.0
-        version: 9.0.0(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.7.1)(@types/node@18.19.42)(dayjs@1.11.13)(luxon@3.7.1)(moment-timezone@0.6.0)(moment@2.30.1)(rrule@2.8.1)
+        version: 9.0.0(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.7.1)(@types/node@18.19.42)(dayjs@1.11.13)(luxon@3.7.2)(moment-timezone@0.6.0)(moment@2.30.1)(rrule@2.8.1)
       luxon:
-        specifier: ^3.7.1
-        version: 3.7.1
+        specifier: ^3.7.2
+        version: 3.7.2
     devDependencies:
       '@types/luxon':
         specifier: ^3.7.1
@@ -85,8 +85,8 @@ packages:
       rrule:
         optional: true
 
-  luxon@3.7.1:
-    resolution: {integrity: sha512-RkRWjA926cTvz5rAb1BqyWkKbbjzCGchDUIKMCUvNi17j6f6j8uHGDV82Aqcqtzd+icoYpELmG3ksgGiFNNcNg==}
+  luxon@3.7.2:
+    resolution: {integrity: sha512-vtEhXh/gNjI9Yg1u4jX/0YVPMvxzHuGgCm6tC5kZyb08yjGWGnqAjGJvcXbqQR2P3MyMEFnRbpcdFS6PBcLqew==}
     engines: {node: '>=12'}
 
   moment-timezone@0.6.0:
@@ -116,18 +116,18 @@ snapshots:
 
   dayjs@1.11.13: {}
 
-  ical-generator@9.0.0(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.7.1)(@types/node@18.19.42)(dayjs@1.11.13)(luxon@3.7.1)(moment-timezone@0.6.0)(moment@2.30.1)(rrule@2.8.1):
+  ical-generator@9.0.0(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.7.1)(@types/node@18.19.42)(dayjs@1.11.13)(luxon@3.7.2)(moment-timezone@0.6.0)(moment@2.30.1)(rrule@2.8.1):
     optionalDependencies:
       '@touch4it/ical-timezones': 1.9.0
       '@types/luxon': 3.7.1
       '@types/node': 18.19.42
       dayjs: 1.11.13
-      luxon: 3.7.1
+      luxon: 3.7.2
       moment: 2.30.1
       moment-timezone: 0.6.0
       rrule: 2.8.1
 
-  luxon@3.7.1: {}
+  luxon@3.7.2: {}
 
   moment-timezone@0.6.0:
     dependencies:
