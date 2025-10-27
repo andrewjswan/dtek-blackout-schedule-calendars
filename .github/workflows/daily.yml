@@ -64,7 +64,7 @@ jobs:
       - build
     steps:
       - name: Download Artifacts / Calendars
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: iCal Calendars
           path: ${{ github.workspace }}/public/
@@ -115,7 +115,7 @@ jobs:
 
     steps:
       - name: Download Artifacts / Calendars Listings
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: iCal Calendars Listings
           path: ${{ github.workspace }}/public/
