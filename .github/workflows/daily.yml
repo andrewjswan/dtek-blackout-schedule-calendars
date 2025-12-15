@@ -50,7 +50,7 @@ jobs:
         run: node make-daily.mjs
 
       - name: Upload Artifacts / Calendars
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: iCal Calendars
           path: |
@@ -75,7 +75,7 @@ jobs:
           FOLDER: public
 
       - name: Upload Artifacts / Calendars Listings
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: iCal Calendars Listings
           path: |
