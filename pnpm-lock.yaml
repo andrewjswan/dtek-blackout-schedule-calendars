@@ -12,8 +12,8 @@ importers:
         specifier: ^1.9.0
         version: 1.9.0
       ical-generator:
-        specifier: ^10.1.0
-        version: 10.1.0(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.7.1)(@types/node@18.19.42)(dayjs@1.11.20)(luxon@3.7.2)(moment-timezone@0.6.1)(moment@2.30.1)(rrule@2.8.1)
+        specifier: ^10.2.0
+        version: 10.2.0(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.7.1)(@types/node@18.19.42)(dayjs@1.11.20)(luxon@3.7.2)(moment-timezone@0.6.1)(moment@2.30.1)(rrule@2.8.1)
       luxon:
         specifier: ^3.7.2
         version: 3.7.2
@@ -52,8 +52,8 @@ packages:
   dayjs@1.11.20:
     resolution: {integrity: sha512-YbwwqR/uYpeoP4pu043q+LTDLFBLApUP6VxRihdfNTqu4ubqMlGDLd6ErXhEgsyvY0K6nCs7nggYumAN+9uEuQ==}
 
-  ical-generator@10.1.0:
-    resolution: {integrity: sha512-VgWzox2svupw4HoZo9Ym0pmj50Cr7CO+By/TraNUVTXQL5Qh0p13iGNzizhXd/KDuzOHUSSXwUWIMZmBHQU65Q==}
+  ical-generator@10.2.0:
+    resolution: {integrity: sha512-XR5FsiDWCsz5MwBwMA/sQqR3A9H240xkXIeXOabV7uNAiieP+TA9rleVvlwPLRXMz+CXME8cGuDd7cdnE5At6w==}
     engines: {node: 20 || 22 || >=24}
     peerDependencies:
       '@touch4it/ical-timezones': '>=1.6.0'
@@ -116,7 +116,7 @@ snapshots:
 
   dayjs@1.11.20: {}
 
-  ical-generator@10.1.0(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.7.1)(@types/node@18.19.42)(dayjs@1.11.20)(luxon@3.7.2)(moment-timezone@0.6.1)(moment@2.30.1)(rrule@2.8.1):
+  ical-generator@10.2.0(@touch4it/ical-timezones@1.9.0)(@types/luxon@3.7.1)(@types/node@18.19.42)(dayjs@1.11.20)(luxon@3.7.2)(moment-timezone@0.6.1)(moment@2.30.1)(rrule@2.8.1):
     optionalDependencies:
       '@touch4it/ical-timezones': 1.9.0
       '@types/luxon': 3.7.1
