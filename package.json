@@ -32,7 +32,7 @@
   "devDependencies": {
     "@types/luxon": "^3.7.4",
     "@types/node": "^18.11.18",
-    "dayjs": "^1.11.21",
+    "dayjs": "^1.11.23",
     "moment": "^2.29.4",
     "moment-timezone": "^0.6.3",
     "rrule": "^2.7.1"
