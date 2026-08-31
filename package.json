@@ -30,7 +30,7 @@
     "luxon": "^3.7.2"
   },
   "devDependencies": {
-    "@types/luxon": "^3.7.4",
+    "@types/luxon": "^3.7.5",
     "@types/node": "^18.11.18",
     "dayjs": "^1.11.23",
     "moment": "^2.29.4",
