@@ -34,7 +34,7 @@
     "@types/node": "^18.11.18",
     "dayjs": "^1.11.23",
     "moment": "^2.31.0",
-    "moment-timezone": "^0.6.4",
+    "moment-timezone": "^0.6.5",
     "rrule": "^2.7.1"
   }
 }
